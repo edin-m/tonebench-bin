@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tonebench — photo viewer and editor</title>
+  <meta name="description" content="Tonebench is a fast, private desktop app for browsing, organizing and editing your photos — RAW, HEIC and HDR included. Everything runs on your machine.">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/icon.png" alt="" width="28" height="28">
+      Tonebench
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#features">Features</a>
+      <a href="#editing">Editing</a>
+      <a href="#library">Library</a>
+      <a href="#formats">Formats</a>
+      <a class="btn btn-small" href="#download">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <img class="hero-icon" src="assets/icon.png" alt="" width="88" height="88">
+      <h1>Your photos, on your machine.<br>Edited with precision.</h1>
+      <p class="lead">
+        Tonebench is a fast desktop photo viewer, editor and library. Open a folder
+        and start browsing, grade RAW and HDR files with live-preview sliders, and
+        find any photo by describing what's in it — with no account, no cloud and
+        no subscription.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/edin-m/tonebench-bin/releases/download/v0.1.0/Tonebench_0.1.0_x64-setup.exe">
+          Download for Windows
+        </a>
+        <a class="btn" href="#download" data-mac-download data-href="">
+          Download for macOS
+        </a>
+      </div>
+      <p class="fine">Version 0.1.0 · Windows 10/11, 64-bit · macOS (Apple Silicon) coming soon</p>
+    </div>
+
+    <div class="wrap">
+      <figure class="shot shot-hero">
+        <img src="screenshots/edit.png" alt="Tonebench Edit view with a landscape photo, histogram and adjustment sliders" width="1480" height="940">
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" id="features">
+    <div class="wrap">
+      <h2>Everything a photo workflow needs, in one quick app</h2>
+      <p class="section-lead">From the first look at a memory card to a finished print.</p>
+
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Instant browsing</h3>
+          <p>Open any folder and flip through it on a filmstrip. Large folders, RAW files and animated GIFs stay smooth, and the metadata panel shows the full EXIF at a glance.</p>
+        </article>
+        <article class="card">
+          <h3>Live, non-destructive editing</h3>
+          <p>Every adjustment renders on the GPU as you drag the slider. Your original file is never touched — edits are saved separately and applied again on export.</p>
+        </article>
+        <article class="card">
+          <h3>Find photos by describing them</h3>
+          <p>Search for “people walking in the woods” or “dog on a beach”. An on-device AI model indexes your library, so photos never leave your computer.</p>
+        </article>
+        <article class="card">
+          <h3>True HDR support</h3>
+          <p>Photos with an embedded HDR gain map — from recent iPhones and Android phones — display with their full brightness range, and HEIC sources export with a real gain map.</p>
+        </article>
+        <article class="card">
+          <h3>Private by design</h3>
+          <p>No accounts and no uploads. Search, subject selection and editing all run on your computer. The only thing that touches the network is the map view, which loads OpenStreetMap tiles.</p>
+        </article>
+        <article class="card">
+          <h3>Print from the app</h3>
+          <p>A built-in print dialog with live preview lets you lay out several photos on one page, choose paper and color options, and send it to any printer — or to PDF.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="editing">
+    <div class="wrap split">
+      <div class="split-text">
+        <p class="eyebrow">Editing</p>
+        <h2>Serious color grading, kept simple</h2>
+        <p>
+          Shape the tone and color of a photo with the controls you already know, and see
+          the result immediately — even on a full-resolution RAW.
+        </p>
+        <ul class="ticks">
+          <li><strong>Core sliders:</strong> exposure, contrast, highlights, shadows, whites, blacks, temperature, tint, saturation and vibrance.</li>
+          <li><strong>Local adjustments:</strong> stack layers, each with its own grade and a linear, radial or hand-painted mask.</li>
+          <li><strong>One-click selections:</strong> pick the subject or the sky with on-device AI instead of painting around it.</li>
+          <li><strong>LUTs:</strong> load <code>.cube</code> looks and blend them in with an intensity slider.</li>
+          <li><strong>Presets:</strong> save a grade once, apply it to any photo later.</li>
+          <li><strong>Crop, rotate and flip</strong> with the same live preview.</li>
+        </ul>
+      </div>
+      <figure class="shot shot-portrait">
+        <img src="screenshots/adjustments.png" alt="Tonebench adjustment panel with presets, a layer with a radial mask, exposure and color sliders, and a LUT" width="333" height="791" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section alt" id="library">
+    <div class="wrap split reverse">
+      <figure class="shot">
+        <img src="screenshots/library.png" alt="Tonebench Library view showing albums and places" width="1480" height="940" loading="lazy">
+      </figure>
+      <div class="split-text">
+        <p class="eyebrow">Library</p>
+        <h2>Organize without moving a single file</h2>
+        <p>
+          Your photos stay exactly where they are. Tonebench adds a library on top
+          that groups them however you like, across folders and drives.
+        </p>
+        <ul class="ticks">
+          <li><strong>Albums:</strong> collect photos from anywhere into manual albums.</li>
+          <li><strong>Places &amp; Map:</strong> photos with GPS data are grouped by location and plotted as clustered thumbnails on a live map.</li>
+          <li><strong>Search:</strong> describe a photo in plain words and get matches ranked by meaning.</li>
+          <li><strong>Hidden photos:</strong> tuck private shots out of sight everywhere with one click.</li>
+          <li><strong>Recently Deleted:</strong> deletions go to the system Recycle Bin and can be restored from inside the app.</li>
+          <li><strong>Video too:</strong> browse, play and organize MP4 and WebM clips alongside your photos.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="formats">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Formats</p>
+        <h2>Opens what your camera and phone produce</h2>
+      </div>
+      <div class="chips" aria-label="Supported formats">
+        <span>JPEG</span><span>PNG</span><span>WebP</span><span>HEIC / HEIF</span>
+        <span>RAW (full demosaic)</span><span>HDR gain maps</span><span>Animated GIF</span>
+        <span>MP4</span><span>WebM</span>
+      </div>
+      <div class="grid grid-2 spaced">
+        <figure class="shot">
+          <img src="screenshots/map.png" alt="Tonebench map view with clustered photo thumbnails" width="1480" height="940" loading="lazy">
+          <figcaption>Every geotagged photo, on a map.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="screenshots/print.png" alt="Tonebench print dialog with live preview" width="1090" height="712" loading="lazy">
+          <figcaption>Multi-photo layouts with live print preview.</figcaption>
+        </figure>
+        <figure class="shot span-2">
+          <img src="screenshots/metadata.png" alt="Tonebench Browse view with the EXIF metadata panel for an iPhone HEIC photo" width="1008" height="920" loading="lazy">
+          <figcaption>Full EXIF and file details beside every photo.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band small-band">
+    <div class="wrap">
+      <div class="grid grid-3 facts">
+        <div><strong>Fast</strong><span>Rust core and a GPU-accelerated preview built on Tauri 2 and WebGL2.</span></div>
+        <div><strong>Light</strong><span>A compact native installer that uses the web view already built into your OS.</span></div>
+        <div><strong>Multilingual</strong><span>English, Croatian and Bosnian today; a new language is one translation file.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section download" id="download">
+    <div class="wrap center">
+      <img src="assets/icon.png" alt="" width="64" height="64">
+      <h2>Download Tonebench</h2>
+      <p class="section-lead">New versions are published on GitHub.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://github.com/edin-m/tonebench-bin/releases/download/v0.1.0/Tonebench_0.1.0_x64-setup.exe">
+          Download for Windows
+        </a>
+        <a class="btn" href="#download" data-mac-download data-href="">
+          Download for macOS
+        </a>
+      </div>
+      <p class="fine">
+        Windows 10/11 (64-bit) · <a href="https://github.com/edin-m/tonebench-bin/releases">All releases</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="brand"><img src="assets/icon.png" alt="" width="20" height="20"> Tonebench</span>
+    <span>© 2026 Tonebench. Your photos never leave your computer.</span>
+    <a href="https://github.com/edin-m/tonebench-bin/releases">Releases</a>
+  </div>
+</footer>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
